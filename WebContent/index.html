@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>UX Society Members</title>
+
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+
+<script type="text/javascript" language="Javascript"
+	src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet"
+	href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css"
+	type="text/css" />
+<script src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+<link rel="stylesheet" href="css/tableStyle.css" type="text/css"
+	media="screen" />
+</head>
+<body>
+
+		<h1>UX Society Members</h1> 
+	<div id="tableDiv" style="text-align: center">
+		<table id="uxMemTab" cellpadding="0" cellspacing="0" border="0"
+			class="display">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Occupation</th>
+					<th>Company</th>
+				</tr>
+			</thead>
+			<!-- Table Header -->
+
+		</table>
+
+		<!-- Popup only section -->
+		<div data-role="popup" id="dialog" style="display: none;">
+
+			<div>
+				<img src="" style="width: 30%; height: 50%" id="portrait" />
+				<div
+					style="float: right; display: inline-block; font-family: sans-serif; color: navy; margin-top: 8%">
+					<span id="title"></span> <span id="fName"></span> <span id="mName"></span>
+					<span id="lName"></span>
+
+				</div>
+				<div style="font-size: smaller; margin-top: 2%">
+					<strong>Address: </strong>
+					<p id="streetAddress " style="font-size: 0.8em;"></p>
+					<p id="city" style="font-size: 0.8em;">
+				</div>
+			</div>
+			<div id="otherDetails" style="margin: 2%; font-size: smaller">
+
+				<div>
+					<span style="float: left;"><strong>Gender:</strong> <span
+						id="gender" style="font: italic; color: blue;"></span> </span> <span
+						style="float: right;"><strong>DOB:</strong><span id="dob"
+						style="float: right;"></span></span>
+				</div>
+				<br>
+				<div style="font-size: 0.8em;">
+					<strong>Company:</strong> <span id="companyName"></span>
+				</div>
+				<div style="font-size: 0.9em">
+					<strong>E-mail:</strong> <span id="email"></span>
+				</div>
+				<div style="font-size: 0.9em">
+					<strong>Occupation:</strong> <span id="occupation"></span>
+				</div>
+				<div style="font-size: 0.8em;">
+					<strong>Username:</strong> <span id="username"></span>
+				</div>
+				<div style="font-size: 0.8em;">
+					<strong>latitude:</strong> <span id="latitude"></span>
+				</div>
+				<div style="font-size: 0.8em;">
+					<strong>longitude: </strong><span id="longitude"></span>
+				</div>
+				<div style="font-size: 0.8em;">
+					<strong>Motto:</strong> <span id="motto"></span>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="js/firstJS.js"></script>
+
+</body>
+</html>
